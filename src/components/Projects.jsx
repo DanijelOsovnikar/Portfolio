@@ -1,12 +1,15 @@
 import "./Projects.scss";
 
-export default function Projects() {
+export default function Projects({ onClick }) {
+  const clickHandler = () => {
+    onClick();
+  };
   return (
     <div className="projects">
       <div className="projects-section">
         <div className="heading">
           <h2>Projects</h2>
-          <button>Contact me</button>
+          <button onClick={clickHandler}>Contact me</button>
         </div>
         <div className="projects-grid">
           <div className="project">

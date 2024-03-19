@@ -1,6 +1,9 @@
 import "./Hero.scss";
 
-export default function Hero() {
+export default function Hero({ onClick }) {
+  const clickHandler = () => {
+    onClick();
+  };
   return (
     <div className="hero">
       <div className="hero-section">
@@ -16,7 +19,7 @@ export default function Hero() {
               Based in the Serbia, I'm a front-end developer passionate about
               building accessible web apps that users love.
             </p>
-            <button>Contact me</button>
+            <button onClick={clickHandler}>Contact me</button>
           </div>
           <img src="assets/profile-img.jpg" />
         </section>

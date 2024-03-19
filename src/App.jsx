@@ -4,18 +4,22 @@ import Languages from "./components/Languages";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import { useRef } from "react";
 import "./App.scss";
 
 function App() {
+  const myRef = useRef(null);
+
+  const executeScroll = () => myRef.current.scrollIntoView();
   return (
     <div className="app">
       <Navbar />
       <main>
-        <Hero />
+        <Hero onClick={executeScroll} />
         <Languages />
-        <Projects />
+        <Projects onClick={executeScroll} />
         <Footer>
-          <Contact />
+          <Contact refProp={myRef} />
         </Footer>
       </main>
     </div>

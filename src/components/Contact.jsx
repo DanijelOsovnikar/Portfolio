@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.scss";
 
-export default function Contact() {
+export default function Contact({ refProp }) {
   const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -41,7 +41,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" ref={refProp}>
       <div className="contact-section">
         <div className="contactHeading">
           <h1>Contact</h1>
