@@ -1,0 +1,162 @@
+@import "../vars/vars";
+@import "../vars/mixin";
+
+.projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 72px;
+
+  .projects-section {
+    max-width: 1200px;
+    width: 100%;
+    padding: 72px 0;
+
+    .heading {
+      width: 100%;
+      margin: 0 0 72px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h2 {
+        @include h1;
+      }
+    }
+  }
+}
+
+.projects-grid {
+  .project {
+    margin: 72px 0;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      margin: 0.7rem 0;
+      border-bottom: 2px solid $red;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
+    h3 {
+      margin: 0.7rem 0;
+    }
+
+    .thePlanets {
+      background-image: url("assets/thePlanets.png");
+      @include imageProject;
+    }
+
+    .swipe {
+      background-image: url("assets/swipe.png");
+      @include imageProject;
+    }
+
+    .coffeeRoasters {
+      background-image: url("assets/coffeeRoasters.png");
+      @include imageProject;
+    }
+
+    .github {
+      background-image: url("assets/devFinder.png");
+      @include imageProject;
+    }
+
+    .project-info {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin: 24px 0;
+
+      h3 {
+        width: 100%;
+        text-align: unset;
+      }
+
+      a {
+        margin: 0 14px 0 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .projects {
+    padding-bottom: unset;
+    .projects-section {
+      display: flex;
+      flex-direction: column;
+      padding: 72px 0 0 0;
+
+      .heading {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+        h2 {
+          @include h2;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  .projects-grid {
+    .project {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .thePlanets {
+        background-image: url("assets/planetsMobile.png");
+        width: 80%;
+        height: 691px;
+        background-size: contain;
+      }
+
+      .swipe {
+        background-image: url("assets/swipeMobile.png");
+        width: 80%;
+        height: 691px;
+        background-size: contain;
+      }
+
+      .coffeeRoasters {
+        background-image: url("assets/coffeeMobile.png");
+        width: 80%;
+        height: 691px;
+        background-size: contain;
+      }
+
+      .github {
+        background-image: url("assets/devMobile.png");
+        width: 80%;
+        height: 691px;
+        background-size: contain;
+      }
+
+      .project-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 24px 0;
+
+        h3 {
+          width: 80%;
+          text-align: center;
+        }
+
+        a {
+          margin: 0 14px 0 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "../vars/mixin";
+@import "../vars/vars";
+
+.navbar {
+  width: 100%;
+  padding: 36px 0;
+  display: flex;
+  justify-content: center;
+
+  nav {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      margin: 0 0 0 14px;
+
+      &:hover {
+        color: $red;
+        cursor: pointer;
+      }
+    }
+
+    .socialWrapper {
+      a {
+        padding: 0 30px 0 0;
+
+        &:hover svg path {
+          fill: $red;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    padding: 14px 0 48px 0;
+
+    nav {
+      flex-direction: column;
+
+      h3 {
+        margin: 14px 0;
+      }
+
+      .socialWrapper {
+        a {
+          padding: 14px;
+        }
+      }
+    }
+  }
+}

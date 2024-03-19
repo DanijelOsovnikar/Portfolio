@@ -1,0 +1,85 @@
+@import "../vars/vars";
+@import "../vars/mixin";
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .contact-section {
+    max-width: 1200px;
+    width: 100%;
+    border-bottom: 2px solid $lightGray;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    .contactHeading {
+      width: 50%;
+      padding: 72px 0;
+
+      p {
+        width: 27rem;
+        padding: 36px 0;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 325px;
+      left: -350px;
+    }
+
+    .form {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 72px 0;
+
+      form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        .textField {
+          margin: 24px 0;
+        }
+
+        button {
+          width: 120px;
+          align-self: flex-end;
+          margin: 48px 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact {
+    .contact-section {
+      flex-direction: column;
+      justify-content: unset;
+
+      .contactHeading {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 72px 0 36px 0;
+
+        p {
+          width: 80%;
+        }
+      }
+
+      .form {
+        width: 100%;
+        justify-content: center;
+        margin: 36px 0 72px 0;
+      }
+    }
+  }
+}

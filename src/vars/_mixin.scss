@@ -1,0 +1,85 @@
+@import "./vars";
+
+@mixin h1 {
+  font-size: $h1FontSize;
+  font-weight: 700;
+  font-size: $h1FontSize;
+  letter-spacing: $h1CharSpacing;
+  line-height: $h1LineHeight;
+  color: $white;
+}
+
+@mixin h2 {
+  font-size: $h2FontSize;
+  font-weight: 700;
+  font-size: $h2FontSize;
+  letter-spacing: $h2CharSpacing;
+  line-height: $h2LineHeight;
+  color: $white;
+}
+
+@mixin h3 {
+  font-size: $h3FontSize;
+  font-weight: 700;
+  font-size: $h3FontSize;
+  line-height: $h3LineHeight;
+  color: $white;
+}
+
+@mixin p {
+  font-size: $pFontSize;
+  font-weight: 300;
+  font-size: $pFontSize;
+  line-height: $pLineHeight;
+  color: $white;
+}
+
+@mixin buttonWithEffect {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid $red;
+  padding: 0 0 10px 0;
+  color: $white;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $red;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $buttonActive;
+  }
+}
+
+@mixin imageProject {
+  background-size: cover;
+  width: 100%;
+  height: 656px;
+  transition: filter 0.3s ease;
+  position: relative;
+  filter: saturate(0);
+  border-radius: 20px;
+
+  &:hover {
+    filter: saturate(1);
+  }
+
+  &:active {
+    filter: saturate(1);
+  }
+}
+
+@mixin projectInfo {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

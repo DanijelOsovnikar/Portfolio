@@ -1,0 +1,47 @@
+@import "../vars/vars";
+@import "../vars/mixin";
+
+.languages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+
+  .languages-section {
+    max-width: 1200px;
+    width: 100%;
+    padding: 72px 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    border-bottom: 2px solid $lightGray;
+    position: relative;
+
+    .lang {
+      @include h2;
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        @include p;
+        color: $lightGray;
+      }
+    }
+
+    .ringsImg {
+      position: absolute;
+      bottom: 25px;
+      right: -400px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .languages {
+    .languages-section {
+      grid-template-columns: 1fr;
+    }
+  }
+}

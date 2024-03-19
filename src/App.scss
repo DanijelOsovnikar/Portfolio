@@ -1,0 +1,43 @@
+@import "./vars/vars";
+@import "./vars/mixin";
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3;
+}
+
+p {
+  @include p;
+}
+
+button {
+  @include buttonWithEffect;
+}
+
+.app {
+  .css-1eed5fa-MuiInputBase-root-MuiInput-root::before {
+    border-bottom: 2px solid $lightGray;
+  }
+
+  .css-1eed5fa-MuiInputBase-root-MuiInput-root::after {
+    border-bottom: 2px solid $red;
+  }
+
+  .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: $red;
+  }
+
+  .css-1eed5fa-MuiInputBase-root-MuiInput-root:hover:not(
+      .Mui-disabled,
+      .Mui-error
+    ):before {
+    border-bottom: 2px solid $lightGray;
+  }
+}
