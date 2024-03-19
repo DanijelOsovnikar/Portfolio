@@ -57,7 +57,7 @@ export default function Contact({ refProp }) {
                 label: { color: "#d9d9d9" },
                 input: { color: "#FFFFFF" },
               }}
-              name="user_name"
+              // name="user_name"
               id="standard-basic1"
               label="NAME"
               variant="standard"
@@ -70,7 +70,7 @@ export default function Contact({ refProp }) {
                 label: { color: "#d9d9d9" },
                 input: { color: "#FFFFFF" },
               }}
-              name="user_email"
+              // name="user_email"
               id="standard-basic2"
               label="EMAIL"
               variant="standard"
@@ -83,7 +83,7 @@ export default function Contact({ refProp }) {
                 label: { color: "#d9d9d9" },
                 input: { color: "#FFFFFF" },
               }}
-              name="message"
+              // name="message"
               id="standard-basic3"
               label="MESSAGE"
               variant="standard"
