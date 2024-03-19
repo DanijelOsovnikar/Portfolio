@@ -53,11 +53,8 @@ export default function Contact({ refProp }) {
         <div className="form">
           <form ref={form} onSubmit={sendEmail}>
             <TextField
-              sx={{
-                label: { color: "#d9d9d9" },
-                input: { color: "#FFFFFF" },
-              }}
-              // name="user_name"
+              InputLabelProps={{ className: "textFieldLabel" }}
+              name="user_name"
               id="standard-basic1"
               label="NAME"
               variant="standard"
@@ -66,11 +63,9 @@ export default function Contact({ refProp }) {
               onChange={nameHandler}
             />
             <TextField
-              sx={{
-                label: { color: "#d9d9d9" },
-                input: { color: "#FFFFFF" },
-              }}
-              // name="user_email"
+              InputLabelProps={{ className: "textFieldLabel" }}
+              InputProps={{ className: "textFieldInput" }}
+              name="user_email"
               id="standard-basic2"
               label="EMAIL"
               variant="standard"
@@ -79,11 +74,8 @@ export default function Contact({ refProp }) {
               onChange={emailHandler}
             />{" "}
             <TextField
-              sx={{
-                label: { color: "#d9d9d9" },
-                input: { color: "#FFFFFF" },
-              }}
-              // name="message"
+              InputLabelProps={{ className: "textFieldLabel" }}
+              name="message"
               id="standard-basic3"
               label="MESSAGE"
               variant="standard"

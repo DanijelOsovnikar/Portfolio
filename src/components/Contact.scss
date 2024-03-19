@@ -41,6 +41,20 @@
         width: 80%;
         display: flex;
         flex-direction: column;
+        .textFieldLabel {
+          color: $lightGray !important;
+        }
+
+        .css-jcincl::before {
+          border-bottom-width: 2px;
+          border-bottom-style: solid;
+          border-bottom-color: $lightGray !important;
+        }
+        .css-jcincl::after {
+          border-bottom-width: 2px;
+          border-bottom-style: solid;
+          border-bottom-color: $red !important;
+        }
 
         .textField {
           margin: 24px 0;
