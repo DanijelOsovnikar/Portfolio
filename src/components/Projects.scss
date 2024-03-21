@@ -46,22 +46,22 @@
     }
 
     .thePlanets {
-      background-image: url("thePlanets.png");
+      background-image: url("assets/thePlanets.png");
       @include imageProject;
     }
 
     .swipe {
-      background-image: url("swipe.png");
+      background-image: url("assets/swipe.png");
       @include imageProject;
     }
 
     .coffeeRoasters {
-      background-image: url("coffeeRoasters.png");
+      background-image: url("assets/coffeeRoasters.png");
       @include imageProject;
     }
 
     .github {
-      background-image: url("devFinder.png");
+      background-image: url("assets/devFinder.png");
       @include imageProject;
     }
 
@@ -114,30 +114,30 @@
       align-items: center;
 
       .thePlanets {
-        background-image: url("planetsMobile.png");
+        background-image: url("assets/planetsMobile.png");
         width: 80%;
-
+        height: 33.9rem;
         background-size: contain;
       }
 
       .swipe {
-        background-image: url("swipeMobile.png");
+        background-image: url("assets/swipeMobile.png");
         width: 80%;
-
+        height: 33.9rem;
         background-size: contain;
       }
 
       .coffeeRoasters {
-        background-image: url("coffeeMobile.png");
+        background-image: url("assets/coffeeMobile.png");
         width: 80%;
-
+        height: 33.9rem;
         background-size: contain;
       }
 
       .github {
-        background-image: url("devMobile.png");
+        background-image: url("assets/devMobile.png");
         width: 80%;
-
+        height: 33.9rem;
         background-size: contain;
       }
 

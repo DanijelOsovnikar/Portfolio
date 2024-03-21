@@ -7,8 +7,14 @@ export default function Hero({ onClick }) {
   return (
     <div className="hero">
       <div className="hero-section">
-        <img src="assets/pattern-rings.svg" className="ringsImg" />
-        <img src="assets/pattern-circle.svg" className="circleImg" />
+        <div className="patternSection">
+          <div className="patternRing"></div>
+          <div className="patternRing"></div>
+          <div className="patternRing"></div>
+          <div className="patternRing"></div>
+          <div className="patternRing"></div>
+        </div>
+        <div className="circle"></div>
         <section>
           <div className="infoSection">
             <h1>
