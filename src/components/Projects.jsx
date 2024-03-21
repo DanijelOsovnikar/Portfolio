@@ -13,7 +13,8 @@ export default function Projects({ onClick }) {
         </div>
         <div className="projects-grid">
           <div className="project">
-            <div className="thePlanets"></div>
+            <div className="thePlanetsDiv"></div>
+            <img src="assets/planetsMobile.png" className="thePlanets" />
             <div className="project-info">
               <h3>The Planets</h3>
               <a
@@ -31,7 +32,8 @@ export default function Projects({ onClick }) {
             </div>
           </div>
           <div className="project">
-            <div className="swipe"></div>
+            <div className="swipeDiv"></div>
+            <img src="assets/swipeMobile.png" className="swipe" />
             <div className="project-info">
               <h3>Swipe</h3>
               <a
@@ -49,7 +51,8 @@ export default function Projects({ onClick }) {
             </div>
           </div>
           <div className="project">
-            <div className="coffeeRoasters"></div>
+            <div className="coffeeRoastersDiv"></div>
+            <img src="assets/coffeeMobile.png" className="coffeeRoasters" />
             <div className="project-info">
               <h3>coffeeRoasters</h3>
               <a
@@ -67,7 +70,8 @@ export default function Projects({ onClick }) {
             </div>
           </div>
           <div className="project">
-            <div className="github"></div>
+            <div className="githubDiv"></div>
+            <img src="assets/devMobile.png" className="github" />
             <div className="project-info">
               <h3>devFinder</h3>
               <a

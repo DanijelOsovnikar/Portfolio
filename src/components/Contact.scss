@@ -5,6 +5,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 0 3rem;
 
   .contact-section {
     max-width: 1200px;
@@ -19,7 +20,7 @@
       padding: 72px 0;
 
       p {
-        width: 27rem;
+        max-width: 27rem;
         padding: 36px 0;
       }
     }
@@ -70,7 +71,7 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
   .contact {
     .contact-section {
       flex-direction: column;

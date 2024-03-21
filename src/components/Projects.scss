@@ -45,24 +45,36 @@
       margin: 0.7rem 0;
     }
 
+    .thePlanetsDiv {
+      background-image: url("thePlanets.png");
+      @include imageProject;
+    }
     .thePlanets {
-      background-image: url("assets/thePlanets.png");
-      @include imageProject;
+      display: none;
     }
 
+    .swipeDiv {
+      background-image: url("swipe.png");
+      @include imageProject;
+    }
     .swipe {
-      background-image: url("assets/swipe.png");
-      @include imageProject;
+      display: none;
     }
 
+    .coffeeRoastersDiv {
+      background-image: url("coffeeRoasters.png");
+      @include imageProject;
+    }
     .coffeeRoasters {
-      background-image: url("assets/coffeeRoasters.png");
-      @include imageProject;
+      display: none;
     }
 
-    .github {
-      background-image: url("assets/devFinder.png");
+    .githubDiv {
+      background-image: url("devFinder.png");
       @include imageProject;
+    }
+    .github {
+      display: none;
     }
 
     .project-info {
@@ -83,6 +95,13 @@
     }
   }
 }
+@media screen and (max-width: 1200px) {
+  .projects {
+    .projects-section {
+      padding: 72px 3rem;
+    }
+  }
+}
 
 @media screen and (max-width: 550px) {
   .projects {
@@ -90,10 +109,8 @@
     .projects-section {
       display: flex;
       flex-direction: column;
-      padding: 72px 0 0 0;
 
       .heading {
-        width: 80%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -112,49 +129,74 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      // position: relative;
+
+      // &::after {
+      //   content: "";
+      //   width: 30rem;
+      //   height: 30rem;
+      //   background-color: $black;
+      //   position: absolute;
+      //   transform: rotate(45deg) translate(371px, 159px);
+      // }
+
+      .thePlanetsDiv {
+        display: none;
+      }
 
       .thePlanets {
-        background-image: url("assets/planetsMobile.png");
-        width: 80%;
-        height: 33.9rem;
-        background-size: contain;
+        @include imageProject;
+        background-size: unset;
+        height: unset;
+        display: block;
+      }
+
+      .swipeDiv {
+        display: none;
       }
 
       .swipe {
-        background-image: url("assets/swipeMobile.png");
-        width: 80%;
-        height: 33.9rem;
-        background-size: contain;
+        @include imageProject;
+        background-size: unset;
+        height: unset;
+        display: block;
+      }
+
+      .coffeeRoastersDiv {
+        display: none;
       }
 
       .coffeeRoasters {
-        background-image: url("assets/coffeeMobile.png");
-        width: 80%;
-        height: 33.9rem;
-        background-size: contain;
+        @include imageProject;
+        background-size: unset;
+        height: unset;
+        display: block;
+      }
+
+      .githubDiv {
+        display: none;
       }
 
       .github {
-        background-image: url("assets/devMobile.png");
-        width: 80%;
-        height: 33.9rem;
-        background-size: contain;
+        @include imageProject;
+        background-size: unset;
+        height: unset;
+        display: block;
       }
 
       .project-info {
-        display: flex;
-        align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
-        margin: 24px 0;
 
         h3 {
-          width: 80%;
           text-align: center;
         }
 
         a {
           margin: 0 14px 0 0;
+
+          &:nth-of-type(2) {
+            margin: unset;
+          }
         }
       }
     }

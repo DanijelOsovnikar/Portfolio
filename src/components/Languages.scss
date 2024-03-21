@@ -10,7 +10,7 @@
   .languages-section {
     max-width: 1200px;
     width: 100%;
-    padding: 72px 0;
+    padding: 54px 3rem;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -34,6 +34,14 @@
       position: absolute;
       bottom: 25px;
       right: -400px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .languages {
+    .languages-section {
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
