@@ -30,6 +30,23 @@
   .project {
     margin: 72px 0;
 
+    .project-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 24px 0;
+      position: absolute;
+      right: 45px;
+      top: 50px;
+      z-index: 1;
+      transform: translateX(250px);
+      transition: transform 1s ease;
+
+      h3 {
+        text-align: unset;
+      }
+    }
     a {
       color: $white;
       text-decoration: none;
@@ -46,52 +63,123 @@
     }
 
     .thePlanetsDiv {
-      background-image: url("thePlanets.png");
+      background-image: url("assets/thePlanets.png");
       @include imageProject;
+      position: relative;
+      overflow: hidden;
+      display: block;
+
+      &::after {
+        content: "";
+        width: 15rem;
+        height: 41rem;
+        background-color: $black;
+        position: absolute;
+        right: 0;
+        transform: translateX(250px);
+        transition: transform 1s ease;
+      }
     }
     .thePlanets {
       display: none;
     }
+    input[type="checkbox"]:checked + .thePlanetsDiv:after {
+      transform: translateX(1px);
+    }
+    input[type="checkbox"]:checked + .thePlanetsDiv {
+      filter: saturate(1);
+    }
+
+    input[type="checkbox"]:checked + .coffeeRoastersDiv:after {
+      transform: translateX(1px);
+    }
+    input[type="checkbox"]:checked + .coffeeRoastersDiv {
+      filter: saturate(1);
+    }
+
+    input[type="checkbox"]:checked + .githubDiv:after {
+      transform: translateX(1px);
+    }
+    input[type="checkbox"]:checked + .githubDiv {
+      filter: saturate(1);
+    }
+
+    input[type="checkbox"]:checked + .swipeDiv:after {
+      transform: translateX(1px);
+    }
+    input[type="checkbox"]:checked + .swipeDiv {
+      filter: saturate(1);
+    }
+
+    input[type="checkbox"]:checked + label .project-info {
+      transform: translateX(0);
+    }
 
     .swipeDiv {
-      background-image: url("swipe.png");
+      background-image: url("assets/swipe.png");
       @include imageProject;
+      position: relative;
+      overflow: hidden;
+      display: block;
+
+      &::after {
+        content: "";
+        width: 15rem;
+        height: 41rem;
+        background-color: $black;
+        position: absolute;
+        right: 0;
+        transform: translateX(250px);
+        transition: transform 1s ease;
+      }
     }
+
     .swipe {
       display: none;
     }
 
     .coffeeRoastersDiv {
-      background-image: url("coffeeRoasters.png");
+      background-image: url("assets/coffeeRoasters.png");
       @include imageProject;
+      position: relative;
+      overflow: hidden;
+      display: block;
+
+      &::after {
+        content: "";
+        width: 15rem;
+        height: 41rem;
+        background-color: $black;
+        position: absolute;
+        right: 0;
+        transform: translateX(250px);
+        transition: transform 1s ease;
+      }
     }
     .coffeeRoasters {
       display: none;
     }
 
     .githubDiv {
-      background-image: url("devFinder.png");
+      background-image: url("assets/devFinder.png");
       @include imageProject;
+      position: relative;
+      overflow: hidden;
+      display: block;
+
+      &::after {
+        content: "";
+        width: 15rem;
+        height: 41rem;
+        background-color: $black;
+        position: absolute;
+        right: 0;
+        transform: translateX(250px);
+        transition: transform 1s ease;
+      }
     }
     .github {
       display: none;
-    }
-
-    .project-info {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      margin: 24px 0;
-
-      h3 {
-        width: 100%;
-        text-align: unset;
-      }
-
-      a {
-        margin: 0 14px 0 0;
-      }
     }
   }
 }
