@@ -62,27 +62,6 @@
       margin: 0.7rem 0;
     }
 
-    .thePlanetsDiv {
-      background-image: url("assets/thePlanets.png");
-      @include imageProject;
-      position: relative;
-      overflow: hidden;
-      display: block;
-
-      &::after {
-        content: "";
-        width: 15rem;
-        height: 41rem;
-        background-color: $black;
-        position: absolute;
-        right: 0;
-        transform: translateX(250px);
-        transition: transform 1s ease;
-      }
-    }
-    .thePlanets {
-      display: none;
-    }
     input[type="checkbox"]:checked + .thePlanetsDiv:after {
       transform: translateX(1px);
     }
@@ -115,8 +94,30 @@
       transform: translateX(0);
     }
 
+    .thePlanetsDiv {
+      background-image: url("thePlanets.png");
+      @include imageProject;
+      position: relative;
+      overflow: hidden;
+      display: block;
+
+      &::after {
+        content: "";
+        width: 15rem;
+        height: 41rem;
+        background-color: $black;
+        position: absolute;
+        right: 0;
+        transform: translateX(250px);
+        transition: transform 1s ease;
+      }
+    }
+    .thePlanets {
+      display: none;
+    }
+
     .swipeDiv {
-      background-image: url("assets/swipe.png");
+      background-image: url("swipe.png");
       @include imageProject;
       position: relative;
       overflow: hidden;
@@ -139,7 +140,7 @@
     }
 
     .coffeeRoastersDiv {
-      background-image: url("assets/coffeeRoasters.png");
+      background-image: url("coffeeRoasters.png");
       @include imageProject;
       position: relative;
       overflow: hidden;
@@ -161,7 +162,7 @@
     }
 
     .githubDiv {
-      background-image: url("assets/devFinder.png");
+      background-image: url("devFinder.png");
       @include imageProject;
       position: relative;
       overflow: hidden;
