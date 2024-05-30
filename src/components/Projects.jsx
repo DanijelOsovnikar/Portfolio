@@ -30,7 +30,7 @@ export default function Projects({ onClick }) {
           <div className="project">
             <h2>Work in progress</h2>
             <video controls>
-              <source src="assets/Screen recording.mp4" type="video/mp4" />
+              <source src="assets/gigatronProject.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="project">
