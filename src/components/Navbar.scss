@@ -38,10 +38,12 @@
 
 @media screen and (max-width: 550px) {
   .navbar {
-    padding: 14px 0 48px 0;
+    padding: 0 0 48px 0;
 
     nav {
       flex-direction: column;
+      background-color: $black;
+      padding: 0 0 10px 0;
 
       h3 {
         margin: 14px 0;
