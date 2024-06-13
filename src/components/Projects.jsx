@@ -5,20 +5,6 @@ export default function Projects({ onClick }) {
     onClick();
   };
 
-  const projectOpening = (e) => () => {
-    if (e === "thePlanets") {
-      document.getElementById("planetsId").style = {
-        transform: "translateX(0)",
-      };
-      console.log(document.getElementById("planetsId"));
-    }
-    if (e === "swipe") {
-    }
-    if (e === "coffeeRoasters") {
-    }
-    if (e === "github") {
-    }
-  };
   return (
     <div className="projects">
       <div className="projects-section">
@@ -33,8 +19,52 @@ export default function Projects({ onClick }) {
               <source src="assets/gigatronProject.mp4" type="video/mp4" />
             </video>
           </div>
+
           <div className="project">
             <h2>Finished projects</h2>
+            <input
+              type="checkbox"
+              name="showHide5"
+              id="showHide5"
+              className="showHide"
+              hidden
+            />
+            <label htmlFor="showHide5" className="taxiDiv">
+              <div className="project-info">
+                <h3>Taxi app</h3>
+                <a
+                  href="https://danijelosovnikar.github.io/Taxi-app/"
+                  target="_blank"
+                >
+                  VIEW PAGE
+                </a>
+                <a
+                  href="https://github.com/DanijelOsovnikar/Taxi-app"
+                  target="_blank"
+                >
+                  VIEW SOURCE CODE
+                </a>
+              </div>
+            </label>
+            <img src="assets/taxiAppMobile.png" className="taxi" />
+            <div className="infoSection">
+              <h3>Taxi app</h3>
+              <a
+                href="https://danijelosovnikar.github.io/Taxi-app/"
+                target="_blank"
+              >
+                VIEW PAGE
+              </a>
+              <a
+                href="https://github.com/DanijelOsovnikar/Taxi-app"
+                target="_blank"
+              >
+                VIEW SOURCE CODE
+              </a>
+            </div>
+          </div>
+
+          <div className="project">
             <input
               type="checkbox"
               name="showHide1"
@@ -59,11 +89,7 @@ export default function Projects({ onClick }) {
                 </a>
               </div>
             </label>
-            <img
-              src="assets/planetsMobile.png"
-              className="thePlanets"
-              onClick={projectOpening("thePlanets")}
-            />
+            <img src="assets/planetsMobile.png" className="thePlanets" />
             <div className="infoSection">
               <h3>The Planets</h3>
               <a
@@ -105,11 +131,7 @@ export default function Projects({ onClick }) {
                 </a>
               </div>
             </label>
-            <img
-              src="assets/swipeMobile.png"
-              className="swipe"
-              onClick={projectOpening("swipe")}
-            />
+            <img src="assets/swipeMobile.png" className="swipe" />
             <div className="infoSection">
               <h3>Swipe</h3>
               <a
@@ -151,11 +173,7 @@ export default function Projects({ onClick }) {
                 </a>
               </div>
             </label>
-            <img
-              src="assets/coffeeMobile.png"
-              className="coffeeRoasters"
-              onClick={projectOpening("coffeeRoasters")}
-            />
+            <img src="assets/coffeeMobile.png" className="coffeeRoasters" />
             <div className="infoSection">
               <h3>coffeeRoasters</h3>
               <a
@@ -197,11 +215,7 @@ export default function Projects({ onClick }) {
                 </a>
               </div>
             </label>
-            <img
-              src="assets/devMobile.png"
-              className="github"
-              onClick={projectOpening("github")}
-            />
+            <img src="assets/devMobile.png" className="github" />
             <div className="infoSection">
               <h3>devFinder</h3>
               <a

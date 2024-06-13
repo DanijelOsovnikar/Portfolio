@@ -14,13 +14,13 @@ export default function Languages() {
           SASS <span>2 Years Experience</span>
         </div>
         <div className="lang">
-          JAVASCRIPT <span>1 Year Experience</span>
+          JAVASCRIPT <span>2 Year Experience</span>
         </div>
         <div className="lang">
-          REACT <span>1 Year Experience</span>
+          REACT <span>2 Year Experience</span>
         </div>
         <div className="lang">
-          ANGULAR <span>1 Year Experience</span>
+          ANGULAR <span>2 Year Experience</span>
         </div>
         <img src="assets/pattern-rings.svg" className="ringsImg" />
       </div>

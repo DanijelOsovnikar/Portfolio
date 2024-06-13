@@ -79,6 +79,13 @@
       margin: 0.7rem 0;
     }
 
+    input[type="checkbox"]:checked + .taxiDiv:after {
+      transform: translateX(1px);
+    }
+    input[type="checkbox"]:checked + .taxiDiv {
+      filter: saturate(1);
+    }
+
     input[type="checkbox"]:checked + .thePlanetsDiv:after {
       transform: translateX(1px);
     }
@@ -111,8 +118,30 @@
       transform: translateX(0);
     }
 
+    .taxiDiv {
+      background-image: url("assets/taxiApp.png");
+      @include imageProject;
+      position: relative;
+      overflow: hidden;
+      display: block;
+
+      &::after {
+        content: "";
+        width: 15rem;
+        height: 41rem;
+        background-color: $black;
+        position: absolute;
+        right: 0;
+        transform: translateX(250px);
+        transition: transform 1s ease;
+      }
+    }
+    .taxi {
+      display: none;
+    }
+
     .thePlanetsDiv {
-      background-image: url("thePlanets.png");
+      background-image: url("assets/thePlanets.png");
       @include imageProject;
       position: relative;
       overflow: hidden;
@@ -134,7 +163,7 @@
     }
 
     .swipeDiv {
-      background-image: url("swipe.png");
+      background-image: url("assets/swipe.png");
       @include imageProject;
       position: relative;
       overflow: hidden;
@@ -157,7 +186,7 @@
     }
 
     .coffeeRoastersDiv {
-      background-image: url("coffeeRoasters.png");
+      background-image: url("assets/coffeeRoasters.png");
       @include imageProject;
       position: relative;
       overflow: hidden;
@@ -179,7 +208,7 @@
     }
 
     .githubDiv {
-      background-image: url("devFinder.png");
+      background-image: url("assets/devFinder.png");
       @include imageProject;
       position: relative;
       overflow: hidden;
@@ -255,6 +284,18 @@
       }
 
       .thePlanets {
+        @include imageProject;
+        background-size: unset;
+        height: unset;
+        display: block;
+        filter: unset;
+      }
+
+      .taxiDiv {
+        display: none;
+      }
+
+      .taxi {
         @include imageProject;
         background-size: unset;
         height: unset;

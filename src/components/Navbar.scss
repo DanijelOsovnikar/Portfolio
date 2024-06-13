@@ -16,6 +16,7 @@
 
     h3 {
       margin: 0 0 0 14px;
+      transition: color 0.3s ease;
 
       &:hover {
         color: $red;
