@@ -14,14 +14,46 @@ export default function Projects({ onClick }) {
         </div>
         <div className="projects-grid">
           <div className="project">
-            <h2>Work in progress</h2>
-            <video controls>
-              <source src="assets/gigatronProject.mp4" type="video/mp4" />
-            </video>
+            <input
+              type="checkbox"
+              name="showHide6"
+              id="showHide6"
+              className="showHide"
+              hidden
+            />
+            <label htmlFor="showHide6" className="gigatronDiv">
+              <div className="project-info">
+                <h3>Gigatron Project</h3>
+                <a
+                  href="https://danijelosovnikar.github.io/Taxi-app/"
+                  target="_blank"
+                >
+                  VIEW PAGE
+                </a>
+                <a
+                  href="https://github.com/DanijelOsovnikar/Taxi-app"
+                  target="_blank"
+                >
+                  VIEW SOURCE CODE
+                </a>
+              </div>
+            </label>
+            <img src="assets/gigatronMobile.png" className="gigatron" />
+            <div className="infoSection">
+              <h3>Gigatron Project</h3>
+              <a href="https://gigatron-project.netlify.app/" target="_blank">
+                VIEW PAGE
+              </a>
+              {/* <a
+                href="https://github.com/DanijelOsovnikar/Taxi-app"
+                target="_blank"
+              >
+                VIEW SOURCE CODE
+              </a> */}
+            </div>
           </div>
 
           <div className="project">
-            <h2>Finished projects</h2>
             <input
               type="checkbox"
               name="showHide5"

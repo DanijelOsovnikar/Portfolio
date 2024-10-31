@@ -17,7 +17,7 @@ export default function Languages() {
           JAVASCRIPT <span>2 Year Experience</span>
         </div>
         <div className="lang">
-          REACT <span>2 Year Experience</span>
+          REACT <span>1 Year Experience</span>
         </div>
         <div className="lang">
           ANGULAR <span>2 Year Experience</span>

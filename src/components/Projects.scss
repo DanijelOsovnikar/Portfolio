@@ -79,6 +79,13 @@
       margin: 0.7rem 0;
     }
 
+    input[type="checkbox"]:checked + .gigatronDiv:after {
+      transform: translateX(1px);
+    }
+    input[type="checkbox"]:checked + .gigatronDiv {
+      filter: saturate(1);
+    }
+
     input[type="checkbox"]:checked + .taxiDiv:after {
       transform: translateX(1px);
     }
@@ -116,6 +123,28 @@
 
     input[type="checkbox"]:checked + label .project-info {
       transform: translateX(0);
+    }
+
+    .gigatronDiv {
+      background-image: url("gigatronProject.png");
+      @include imageProject;
+      position: relative;
+      overflow: hidden;
+      display: block;
+
+      &::after {
+        content: "";
+        width: 15rem;
+        height: 41rem;
+        background-color: $black;
+        position: absolute;
+        right: 0;
+        transform: translateX(250px);
+        transition: transform 1s ease;
+      }
+    }
+    .gigatron {
+      display: none;
     }
 
     .taxiDiv {
@@ -291,6 +320,18 @@
         filter: unset;
       }
 
+      .gigatronDiv {
+        display: none;
+      }
+
+      .gigatron {
+        @include imageProject;
+        background-size: unset;
+        height: unset;
+        display: block;
+        filter: unset;
+      }
+
       .taxiDiv {
         display: none;
       }
@@ -352,6 +393,18 @@
           &:nth-of-type(2) {
             margin: unset;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .projects {
+    .projects-section {
+      .heading {
+        h2 {
+          font-size: 35px;
         }
       }
     }
