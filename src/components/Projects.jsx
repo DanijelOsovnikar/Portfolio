@@ -22,20 +22,17 @@ export default function Projects({ onClick }) {
               hidden
             />
             <label htmlFor="showHide6" className="gigatronDiv">
-              <div className="project-info">
+              <div className="project-info" style={{ right: "25px" }}>
                 <h3>Gigatron Project</h3>
-                <a
-                  href="https://danijelosovnikar.github.io/Taxi-app/"
-                  target="_blank"
-                >
+                <a href="https://gigatron-project.netlify.app/" target="_blank">
                   VIEW PAGE
                 </a>
-                <a
+                {/* <a
                   href="https://github.com/DanijelOsovnikar/Taxi-app"
                   target="_blank"
                 >
                   VIEW SOURCE CODE
-                </a>
+                </a> */}
               </div>
             </label>
             <img src="assets/gigatronMobile.png" className="gigatron" />
